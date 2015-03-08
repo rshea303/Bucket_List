@@ -1,9 +1,18 @@
-<%= form_for(:session, url: session_path) do |f| %>
-  <%= f.label :email %>
-  <%= f.email_field :email %>
- 
-  <%= f.label :password %>
-  <%= f.password_field :password %>
-
-  <%= f.submit "Submit" %>
-<% end %>
+<!DOCTYPE html>
+<html>
+  <body>
+    <ul>
+    <%= form_for(:session, url: session_path) do |f| %>
+      <li>
+        <%= f.label :email %>
+        <%= f.email_field :email %>
+      </li>
+      <li>     
+        <%= f.label :password %>
+        <%= f.password_field :password %>
+      </li>
+      <%= f.submit "Submit" %>
+    <% end %>
+    </ul>
+  </body>
+</html>
