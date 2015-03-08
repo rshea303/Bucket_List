@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <% if current_user %>
+      <%= link_to 'Logout', session_path, method: :delete %>
+    <% else %>
+      <%= link_to 'Login', new_session_path %>
+    <% end %>
+  </body>
+</html>
