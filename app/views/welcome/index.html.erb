@@ -1,0 +1,6 @@
+<h1>Welcome to the BucketList</h1>
+<% if current_user %>
+  <%= link_to 'Logout', session_path, method: :delete %>
+<% else %>
+  <%= link_to 'Login', new_session_path %>
+<% end %>
