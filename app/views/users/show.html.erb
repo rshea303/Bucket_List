@@ -14,7 +14,8 @@
         <li>
         <%= idea.description %>
         </li>
-        <%= link_to 'Edit', edit_idea_path(idea) %>
+        <%= link_to 'Edit', edit_idea_path(idea) %> |
+        <%= link_to 'Delete', idea, method: :delete %>
       </ul>
     <% end %>
   </body>
