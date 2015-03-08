@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
-  resources :users do 
-    resources :ideas
-  end
+  resources :users 
   
+  resources :ideas
   resource :session
   post 'session/new', to: "sessions#create"
 

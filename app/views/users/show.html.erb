@@ -5,6 +5,7 @@
       <%= render 'partials/header' %>
     </header>
     <h1>Welcome <%= current_user.name %></h1>
+    <%= link_to 'Create New Idea!', new_idea_path %>
     <% @ideas.each do |idea| %>
       <ul>
         <li>
