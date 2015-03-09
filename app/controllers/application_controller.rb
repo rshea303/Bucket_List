@@ -13,4 +13,10 @@ class ApplicationController < ActionController::Base
   def current_user?(user)
     current_user == user
   end
+
+  def require_signin
+    unless current_user
+      redirect_to new_session_path
+    end
+  end
 end
